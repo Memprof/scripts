@@ -3,6 +3,8 @@ Memprof Scripts
 
 Scripts to launch Memprof and to analyse results.
 
+* profile_app.sh <application> - profile an application; see script code to know how to analyse the collected data
+
 * locality.cmd - Gnuplot script, see Memprof usage
 * threads.cmd - Gnuplot script, see Memprof usage
 
