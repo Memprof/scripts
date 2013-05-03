@@ -3,6 +3,7 @@ MEMPROF_PATH="../"
 APP_NAME=db_bench_wiredtiger
 
 sudo insmod $MEMPROF_PATH/module/memprof.ko
+rm /tmp/data.raw.*
 
 echo 'b' > /proc/memprof_cntl
 env LD_PRELOAD=$MEMPROF_PATH/library/ldlib.so $@
