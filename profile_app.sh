@@ -1,6 +1,10 @@
 #!/bin/sh
-MEMPROF_PATH="../"
-APP_NAME=db_bench_wiredtiger
+
+pushd `dirname $0` > /dev/null
+SCRIPTPATH=`pwd`
+popd > /dev/null
+
+MEMPROF_PATH="${SCRIPTPATH}/.."
 
 sudo insmod $MEMPROF_PATH/module/memprof.ko
 rm /tmp/data.raw.*
